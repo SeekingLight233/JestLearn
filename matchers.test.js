@@ -61,3 +61,5 @@ const throwNewErr = () => {
 test('toThrow', () => {
   expect(throwNewErr).toThrow('error!');
 });
+
+// 更多的匹配器请查阅 expect api
