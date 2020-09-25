@@ -15,8 +15,11 @@ afterEach(() => {
 afterAll(() => {
   console.log('afterAll');
 });
-
+// 使用describe进行分组
 describe('测试加法', () => {
+  /**
+   * @description 每一个describe中都会存在一个独立的生命周期钩子
+   */
   test('测试addOne', () => {
     counter.addOne();
     expect(counter.number).toBe(1);
